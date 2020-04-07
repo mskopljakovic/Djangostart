@@ -1,0 +1,52 @@
+{% load static %}
+
+<!---Contact Start-->
+<div id="contact" class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4">Social Media Contact</h1>
+        </div>
+        <div class="container">
+            <!-- Social buttons -->
+            <div class="container-fluid padding">
+                <div class=" row text-center padding">
+                    <div class="col-12">
+                        <div class="col-12 social padding">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="col-12">
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, voluptas maxime. Sed
+                    placeat
+                    ipsa eum! Labore quisquam iure delectus dolor eaque magni, natus at, impedit culpa fu</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <div class="section-inner clearfix">
+
+        <h3>Contact Us</h3>
+
+        <form action="" method="post">
+            {% csrf_token %}
+            <table>
+                {{ form.as_table }}
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+</div>
+<!-- Contact End -->
